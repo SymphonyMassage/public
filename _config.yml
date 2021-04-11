@@ -1,0 +1,13 @@
+title: Symphony Massage
+description: Symphony Massage provides massage and body work services for relaxation and rehabilitation.
+baseurl: ""
+url: "https://symphonymassage.com"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+  load_paths:
+      - node_modules

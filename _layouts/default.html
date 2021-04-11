@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="{{bodyclass}}">
+    <div class="container pb-5">
+        <div class="logo-wrapper">
+            <a href="/">
+                <img class="logo img-fluid" src="/assets/img/logo.svg" alt="Symphony Massage" />
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg rounded">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+                <ul class="navbar-nav nav-pills m-auto">
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link" href="/#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link" href="/#hours">Hours</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link" href="/#staff">Staff</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a class="nav-link" href="/#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3 d-none d-lg-block">
+                        <a class="nav-link btn-primary text-white" target="_top"
+                            href="https://squareup.com/appointments/book/jw81kd2foerc6y/M64D3YZJYJN8E/start"
+                            rel="nofollow" href="#">
+                            Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <span class="license">License: MM40363</span>
+        <div class="content">
+            <div class="text-center pt-4 mb-4 slogan">
+                <h1>Rest your mind and body.<br class="d-lg-none" /> Connect with your spirit.</h1>
+            </div>
+            <div class="d-lg-none mb-4 mt-3">
+                <a class="btn btn-primary btn-lg btn-block" target="_top"
+                    href="https://squareup.com/appointments/book/jw81kd2foerc6y/M64D3YZJYJN8E/start" rel="nofollow"
+                    href="#">
+                    Book Now
+                </a>
+            </div>
+            {{content}}
+        </div>
+    </div>
+</body>
+<script src="/assets/js/index.js"></script>
+<script>
+    function initMap() {
+        var location = {
+            lat: 27.3897755750965, lng: -82.64063658976256
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: location,
+            zoomControl: true,
+            mapTypeControl: false,
+            streetViewControl: false,
+            overviewMapControl: false,
+        });
+        var marker = new google.maps.Marker({
+            position: location, map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABfDXBIaq9Tr_K5qx4hTpmmXFv3a-Ct7g&callback=initMap">    </script>
+
+</html>
