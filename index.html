@@ -2,106 +2,37 @@
 layout: home
 ---
 
-<div class="row mt-4 ">
-    <div class="col-lg-8">
-        <div class="card">
-            <div class="card-body">
-                <h3 class="card-title" id="about-us">About Us</h5>
-                    <div class="about-us">
-                        <p class="card-text">
-                            <img class="float-right pl-2 pr-2" src="/assets/img/s.jpg" alt="Symphony Massage Logo"
-                                height="200" />
-                            Here at Symphony Massage we believe that bodywork should be an instrumental part of your
-                            well being. We have taken the time to hire the most professionally trained therapists and
-                            have partnered with exceptional skincare and wellness associates who are thrilled to be a
-                            part of our vision for the Longboat Key community.
-                        </p>
-                        <p class="card-text">
-                            Knowing the high standards on LBK we are confident that you will find our services and
-                            product line to be impeccable. We are looking forward to introducing you to a variety of
-                            bodywork for relaxation and rehabilitative purposes. Please visit our Service Menu to help
-                            you decide which service will meet your needs and allow us to make suggestions by calling us
-                            at <a href="tel:9415249700">(941) 524-9700</a>.
-                        </p>
-                        <p class="card-text">
-                            <img class="float-left m-1 pl-2 pr-2" src="/assets/img/ace.jpg"
-                                alt="Ace MassgaeCupping and MediCupping" height="140" />
-                            Our little band has been put together based on their skill, professionalism and caring
-                            spirit. We require your attention to be able to be our best. At any time if you would like
-                            to try a different therapist, modality... anything, let us know. Your feedback is essential
-                            to the success of the business. We promise to do our best to accommodate your needs within
-                            our scope of practice.
-                        </p>
-                        <p class="card-text">
-                            We are looking forward to being a part of your wellness team!
-                        </p>
-                    </div>
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title" id="about-us">About Us</h5>
+            <div class="about-us">
+                <p class="card-text">
+                    <img class="float-right pl-2 pr-2" src="/assets/img/s.jpg" alt="Symphony Massage Logo"
+                        height="200" />
+                    Here at Symphony Massage we believe that bodywork should be an instrumental part of your
+                    well being. We have taken the time to hire the most professionally trained therapists and
+                    have partnered with exceptional skincare and wellness associates who are thrilled to be a
+                    part of our vision for the Longboat Key community.
+                </p>
+                <p class="card-text">
+                    Knowing the high standards on LBK we are confident that you will find our services and
+                    product line to be impeccable. We are looking forward to introducing you to a variety of
+                    bodywork for relaxation and rehabilitative purposes. Please visit our Service Menu to help
+                    you decide which service will meet your needs and allow us to make suggestions by calling us
+                    at <a href="tel:9415249700">(941) 524-9700</a>.
+                </p>
+                <p class="card-text">
+                    <img class="float-left m-1 pl-2 pr-2" src="/assets/img/ace.jpg"
+                        alt="Ace MassgaeCupping and MediCupping" height="140" />
+                    Our little band has been put together based on their skill, professionalism and caring
+                    spirit. We require your attention to be able to be our best. At any time if you would like
+                    to try a different therapist, modality... anything, let us know. Your feedback is essential
+                    to the success of the business. We promise to do our best to accommodate your needs within
+                    our scope of practice.
+                </p>
+                <p class="card-text">
+                    We are looking forward to being a part of your wellness team!
+                </p>
             </div>
-        </div>
-        <div class="card mt-4 mb-4">
-            <div class="card-body">
-                <h3 class="card-title" id="staff">Staff</h5>
-                    <div class="row card-group">
-                        {% for employee in site.data.employees %}
-                        <div class="p-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{employee.name}} <span
-                                            class="float-right small"><strong>{{employee.license}}</strong></span></h5>
-                                    <img class="float-left m-2 rounded img-thumbnail" src="{{employee.photo}}"
-                                        alt="{{employee.name}}'s Photo" style="height:160px" />
-                                    <p class="card-text">{{employee.bio}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <div id="map"></div>
-            <div class="card-body">
-                <h5 class="card-title" id="hours">Hours</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Monday-Friday <span class="float-right">10:00AM - 6:00PM</span></li>
-                    <li class="list-group-item">Saturday <span class="float-right">10:00AM - 6:00PM</span></li>
-                    <li class="list-group-item">Sunday <span class="float-right">10:00AM - 6:00PM</span></li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" id="contact">Contact</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Phone <span class="float-right"><a href="tel://9415249700">(941)
-                                524-9700</a></span></li>
-                    <li class="list-group-item">SMS <span class="float-right"><a href="sms://9415249700">(941)
-                                524-9700</a></span></li>
-                    <li class="list-group-item">Facebook <span class="float-right"><a
-                                href="https://www.facebook.com/SymphonyMassage/">www.facebook.com</a></span></li>
-                </ul>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title" id="address">Address</h5>
-                <address>
-                    <a
-                        href="https://www.google.com/maps/dir//4134+Gulf+of+Mexico+Drive+Suite+208+Longboat+Key+FL+34228">
-                        4134 Gulf of Mexico Drive Suite 208 <br /> Longboat Key, FL 34228
-                    </a>
-                </address>
-            </div>
-        </div>
-        <div class="card mb-4">
-            <div class="card-body">
-                <a href="https://www.abmp.com/" target="_blank">
-                    <img border="0" style="border: none;"
-                        src="//dzdx4ocwzatbw.cloudfront.net/public/image/abmp-member-logo.gif">
-                </a>
-                <a href="http://www.massagetherapy.com/" target="_blank">
-                    <img border="0" style="border: none;"
-                        src="https://www.abmp.com/sites/abmp.com/files/abmp/images/ad_massage.jpg">
-                </a>
-            </div>
-        </div>
     </div>
 </div>
