@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css?{{ site.time | date: '%s%N' }}">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
@@ -120,7 +120,7 @@
         </div>
     </div>
 </body>
-<script src="/assets/js/index.js"></script>
+<script src="/assets/js/index.js?{{ site.time | date: '%s%N' }}"></script>
 <script>
     function initMap() {
         var location = {
